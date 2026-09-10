@@ -95,7 +95,7 @@ export default function ConnectivityDashboard() {
             backgroundColor: conn.isConnected ? '#dcfce7' : '#fee2e2'
           }]}>
             <Ionicons
-              name={conn.isConnected ? "Wifi" : "cloud-offline"}
+              name={conn.isConnected ? "wifi" : "cloud-offline"}
               size={40}
               color={conn.isConnected ? "#16a34a" : "#dc2626"}
             />
@@ -177,10 +177,13 @@ export default function ConnectivityDashboard() {
 }
 
 const styles = StyleSheet.create({
-  container: { flex: 1 },
+  container: { 
+    flex: 1 
+  },
   scroll: { 
     padding: 25,
-    paddingTop: 60 },
+    paddingTop: 60 
+  },
   header: { 
     marginBottom: 30 
   },
